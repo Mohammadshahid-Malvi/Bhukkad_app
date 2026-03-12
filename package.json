@@ -1,0 +1,31 @@
+{
+  "name": "bhukkad-react",
+  "version": "1.0.0",
+  "description": "This app actually for Bhukkad People.",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammadshahid-Malvi/Bhukkad-public.git"
+  },
+  "keywords": [
+    "Bhukkad",
+    "Banda",
+    "Lalchi",
+    "Dost"
+  ],
+  "author": "Mohammadshahid Malvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammadshahid-Malvi/Bhukkad-public/issues"
+  },
+  "homepage": "https://github.com/Mohammadshahid-Malvi/Bhukkad-public#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
