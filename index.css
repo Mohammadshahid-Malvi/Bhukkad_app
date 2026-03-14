@@ -1,3 +1,4 @@
+/* Start Header style */
 .header {
     border: 1px solid black;
     display: flex;
@@ -15,6 +16,28 @@
     padding: 0px 10px;
     margin: 25px 0px;
 }
+.login {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+/* End Header style */
+
+/* Start Filter of Top Rated Restaurant */
+.filter {
+    display: flex;
+}
+.search {
+    margin-top: 8px;
+}
+/* End Filter of Top Rated Restaurant */
+
+/* Start Filter of Top Rated Restaurant */
+.filter-btn {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+/* End Filter of Top Rated Restaurant */
 
 /* Start Restaurant Container */
 .restaurant-container {
@@ -39,3 +62,20 @@
     height: 200px;
 }
 /* End Restaurant Card */
+
+/* Start Shimmer Style */
+
+.shimmer-container {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-container .shimmer-card {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 400px;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* End Shimmer Style */
