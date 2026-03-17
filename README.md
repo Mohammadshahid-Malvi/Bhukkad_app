@@ -15,4 +15,6 @@ import {Component/variable} from "path";
 - useState() - super powerful state variable in React(will use 80%).
 - useEffect() -will use 20%
 
- 
+# 2 types of Routing in web apps
+- Client Side Routing :- 
+- Server Side Routing :- You make network call, & about page coming from server.

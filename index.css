@@ -79,3 +79,11 @@
 }
 
 /* End Shimmer Style */
+
+
+/* Start User Style */
+.user-detail {
+    border: 1px solid black;
+    padding: 10px;
+}
+/* End User style */

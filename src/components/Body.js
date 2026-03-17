@@ -6,6 +6,7 @@ const Body = () => {
     // SuperPower state variable of React
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+
     const [searchText, setSearchText] = useState([]);
 
     // useEffect hooks to fetch API data,after first rendered Component.
@@ -49,7 +50,7 @@ const Body = () => {
             </div>
             <div className="restaurant-container">
                 {
-                    filteredRestaurant.map((restaurant) => (
+                    listOfRestaurants.map((restaurant) => (
                         <RestaurantCard key={restaurant.info.id} resData={restaurant}/>
                     ))   
                 }
