@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 const RestaurantMenu = () => {
 
     const [resInfo, setResInfo] = useState(null);
+
     useEffect(()=>{
         fetchMenu();
-    },[]);
+    });
 
     const fetchMenu = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.010741&lng=72.513461&restaurantId=37650&catalog_qa=undefined&submitAction=ENTER");
+        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.010741&lng=72.513461&restaurantId=37687&catalog_qa=undefined&submitAction=ENTER");
         const json = await data.json();
         // setResInfo(data);
     };
