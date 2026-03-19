@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/Mohammadshahid-Malvi/Bhukkad-public#readme",
   "devDependencies": {
-    "parcel": "^2.16.4"
+    "@tailwindcss/postcss": "^4.2.1",
+    "parcel": "^2.16.4",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1"
   },
   "dependencies": {
     "react": "^19.2.4",
