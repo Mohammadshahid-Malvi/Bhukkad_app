@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This app actually for Bhukkad People.",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,9 @@
     "Banda",
     "Lalchi",
     "Dost"
+  ],
+  "browserslist": [
+    "last 10 Chrome versions" 
   ],
   "author": "Mohammadshahid Malvi",
   "license": "ISC",

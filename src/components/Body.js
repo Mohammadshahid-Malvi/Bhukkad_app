@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import RestaurantCard from "./RestaurantCard.js";
 import Shimmer from "./Shimmer.js";
+import userContext from "../utils/UserContext.js";
 
 const Body = () => {
     // SuperPower state variable of React
@@ -8,6 +9,8 @@ const Body = () => {
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
     const [searchText, setSearchText] = useState([]);
+
+    var {loggedInUser, setUserName} = useContext(userContext);
 
     // useEffect hooks to fetch API data,after first rendered Component.
     useEffect(()=>{
@@ -17,10 +20,11 @@ const Body = () => {
     const fetchData = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.010741&lng=72.513461&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
+
         // Optional Chaining
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
-
+    
     return listOfRestaurants.length === 0 ? (<Shimmer/>) : (
         <div className="body">
             <div className="flex align-middle">
@@ -47,6 +51,11 @@ const Body = () => {
                     }}
 
                 >Top Rated Restaurant</button>
+                <label className="flex items-center ">Input Username: </label>
+                <input type="text" className="border-1 p-2 m-2 rounded-md" value={loggedInUser}/>
+            </div>
+            <div className="">
+                
             </div>
             <div className="flex flex-wrap">
                 {
